@@ -1,59 +1,30 @@
-# DB作ってみた（リポジトリ/プロジェクト/OSSなどの名前）
+# DB作ってみた
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
-
-"hoge"が何かを簡潔に紹介する
+好きなアニメを登録して管理したいと思ったから作ってみた
 
 # DEMO
+Top画面
+この画面でできる事は
+* アニメの追加
+* 既存のアニメデータの更新
+* アニメデータの削除
+* データを登録順（ID順）に並び替える
+* 名前順に並び替える
+* 評価順（昇順）に並び替える
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+![スクリーンショット (412)](https://user-images.githubusercontent.com/67303349/120938411-8b651980-c74d-11eb-8f5c-0e90f7de51ef.png)
+
+
+上のアニメを追加を押すと追加できる。また警告文も出るようにした
+![スクリーンショット (415)](https://user-images.githubusercontent.com/67303349/120938471-d41cd280-c74d-11eb-9b5d-5c14e69e4b5f.png)
+![スクリーンショット (414)](https://user-images.githubusercontent.com/67303349/120938478-d97a1d00-c74d-11eb-9d3d-920402d63e87.png)
+
+アニメの追加画面ではアニメの名前、話数、公式サイトのURL、アニメの5段階評価を入力することができる
+
 
 # Features
 
-"hoge"のセールスポイントや差別化などを説明する
+勉強の成果を出したくBootstrapやMySQL、Node.js、HTMLなど使って書いてみた
+ただの自己満作品です。
 
-# Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
-
-# Installation
-
-Requirementで列挙したライブラリなどのインストール方法を説明する
-
-```bash
-pip install huga_package
-```
-
-# Usage
-
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
-
-# Note
-
-注意点などがあれば書く
-
-# Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
-
-# License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
