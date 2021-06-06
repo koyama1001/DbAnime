@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <title>アニメ入力フォーム</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading">アニメ入力フォーム</div>
+          <div class="panel-body">
+<form action="/" method="POST">
+    <div class="form-group">
+    タイトル <input class="form-control" type="text" name="name"><br>
+
+    話数 <input  class="form-control" type="text" name="story"><br>
+    公式サイトURL <input  class="form-control" type="text" name="url"><br>
+    </div>
+    <div class="radio">
+        評価<br>
+        <label><input type="radio" name="rank" value="1">1</label>
+        <label><input type="radio" name="rank" value="2">2</label>
+        <label><input type="radio" name="rank" value="3">3</label>
+        <label><input type="radio" name="rank" value="4">4</label>
+        <label><input type="radio" name="rank" value="5">5</label>
+   <!--<input  class="form-control" type="text" name="rank"><br>-->
+    </div>
+
+
+    <table>
+        <tr>
+    <td><button type="submit" class="btn btn-primary" onclick='return confirm("送信してもよろしいですか？");'>送信</button></td>
+   <td><a href="/" button type="button" class="btn btn-primary" onclick='return confirm("戻りますか？");'>戻る</a></td>
+</tr>
+</table>
+</form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

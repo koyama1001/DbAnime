@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime list</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">自分の好きなアニメ</div>
+            <p><a href="/create" button type="button" class="btn btn-success"onclick='return confirm("アニメを追加しますか？");'>アニメ追加</a></p>
+        <table>
+            <tr>
+        <td><p><a href="/name" button type="button" class="btn btn-info">名前順</a></p></td>
+        <td> <p><a href="/ID" button type="button" class="btn btn-default">ID順</a></p></td>
+        <td><p><a href="/RANK" button type="button" class="btn btn-primary">評価順</a></p></td>
+    </tr>
+    </table>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>名前</th>
+            <th>話数</th>
+            <th>公式サイトURL</th>
+            <th>評価</th>
+            <th>更新</th>
+            <th>削除</th>
+        </tr>
+        </thead>
+        <% users.forEach(function (value) { %>
+        <tr>
+            <td><%= value.name %></td>
+            <td><%= value.story %></td>
+            <td><%= value.url %></td>
+            <td><%= value.rank %></td>
+            <td><a href="/edit/<%= value.id %>" button type="button" class="btn btn-primary"onclick='return confirm("更新しますか？");'>更新</a></td>
+            <td><a href="/delete/<%= value.id %>" button type="button" class="btn btn-danger"onclick='return confirm("本当に削除しますか？");'>削除</a></td>
+        </tr>
+        
+        <% }); %>
+    </table>
+    </div>
+    </div>
+    
+</body>
+</html>
