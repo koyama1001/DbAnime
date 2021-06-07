@@ -32,6 +32,7 @@
             <th>名前</th>
             <th>話数</th>
             <th>公式サイトURL</th>
+            <th>ジャンル</th>
             <th>評価</th>
             <th>更新</th>
             <th>削除</th>
@@ -42,6 +43,7 @@
             <td><%= value.name %></td>
             <td><%= value.story %></td>
             <td><a href="<%= value.url %>"><%= value.url %></a></td>
+            <td><%= value.Genre %></td>
             <td><%= value.rank %></td>
             <td><a href="/edit/<%= value.id %>" button type="button" class="btn btn-primary"onclick='return confirm("更新しますか？");'>更新</a></td>
             <td><a href="/delete/<%= value.id %>" button type="button" class="btn btn-danger"onclick='return confirm("本当に削除しますか？");'>削除</a></td>
